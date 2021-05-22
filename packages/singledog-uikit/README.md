@@ -1,12 +1,12 @@
 # 🥞 Singledog UIkit
 
-[![Version](https://img.shields.io/npm/v/@singledogswap-libs/uikit)](https://www.npmjs.com/package/@singledogswap-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@singledogswap-libs/uikit)](https://www.npmjs.com/package/@singledogswap-libs/uikit)
+[![Version](https://img.shields.io/npm/v/@singledogswap/uikit)](https://www.npmjs.com/package/@singledogswap/uikit) [![Size](https://img.shields.io/bundlephobia/min/@singledogswap/uikit)](https://www.npmjs.com/package/@singledogswap/uikit)
 
 Singledog UIkit is a set of React components and hooks used to build pages on Singledog's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
-`yarn add @singledogswap-libs/uikit`
+`yarn add @singledogswap/uikit`
 
 ## Setup
 
@@ -16,7 +16,7 @@ Before using Singledog UIkit, you need to provide the theme file to styled-compo
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@singledogswap-libs/uikit'
+import { light, dark } from '@singledogswap/uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
@@ -26,7 +26,7 @@ import { light, dark } from '@singledogswap-libs/uikit'
 A reset CSS is available as a global styled component.
 
 ```
-import { ResetCSS } from '@singledogswap-libs/uikit'
+import { ResetCSS } from '@singledogswap/uikit'
 ...
 <ResetCSS />
 ```
