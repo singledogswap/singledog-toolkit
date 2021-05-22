@@ -8,7 +8,7 @@ it("renders ConnectModal correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c5 {
-      color: #280D5F;
+      color: #452A7A;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
@@ -62,7 +62,7 @@ it("renders ConnectModal correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #280D5F;
+      fill: #452A7A;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -551,7 +551,7 @@ it("renders ConnectModal correctly", () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <g
-                clip-path="url(#svg1)"
+                clip-path="url(#clip-trustwallet)"
               >
                 <path
                   d="M48.0048 96.0097C74.5172 96.0097 96.0097 74.5172 96.0097 48.0048C96.0097 21.4925 74.5172 0 48.0048 0C21.4925 0 0 21.4925 0 48.0048C0 74.5172 21.4925 96.0097 48.0048 96.0097Z"
@@ -564,7 +564,7 @@ it("renders ConnectModal correctly", () => {
               </g>
               <defs>
                 <clippath
-                  id="svg1"
+                  id="clip-trustwallet"
                 >
                   <rect
                     fill="white"

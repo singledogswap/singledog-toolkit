@@ -65,7 +65,6 @@ export const links = [
   {
     label: "Profile & Teams",
     icon: "GroupsIcon",
-    status: status.LIVE,
     items: [
       {
         label: "Leaderboard",

@@ -25,7 +25,7 @@ it("renders correctly", () => {
     }
 
     .c2 {
-      border-bottom: 2px solid #7A6EAA;
+      border-bottom: 2px solid #8f80ba;
       overflow-x: scroll;
       -ms-overflow-style: none;
       -webkit-scrollbar-width: none;
@@ -71,13 +71,11 @@ it("renders correctly", () => {
       flex-grow: 1;
       padding: 8px;
       border-radius: 16px 16px 0 0;
-      font-size: 16px;
-      font-weight: 600;
       color: #FFFFFF;
-      background-color: #7A6EAA;
+      background-color: #8f80ba;
     }
 
-    .c5 {
+    .c6 {
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
       display: -ms-inline-flexbox;
@@ -95,10 +93,24 @@ it("renders correctly", () => {
       flex-grow: 1;
       padding: 8px;
       border-radius: 16px 16px 0 0;
-      font-size: 16px;
-      font-weight: 600;
-      color: #7A6EAA;
+      color: #8f80ba;
       background-color: #eeeaf4;
+    }
+
+    .c5 {
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .c7 {
+      color: #8f80ba;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      font-weight: 600;
     }
 
     @media screen and (min-width:370px) {
@@ -122,15 +134,17 @@ it("renders correctly", () => {
         -webkit-flex-grow: 0;
         -ms-flex-positive: 0;
         flex-grow: 0;
+        padding: 8px 12px;
       }
     }
 
     @media screen and (min-width:852px) {
-      .c5 {
+      .c6 {
         -webkit-box-flex: 0;
         -webkit-flex-grow: 0;
         -ms-flex-positive: 0;
         flex-grow: 0;
+        padding: 8px 12px;
       }
     }
 
@@ -143,16 +157,26 @@ it("renders correctly", () => {
           <button
             class="c4"
             color="backgroundAlt"
-            scale="md"
           >
-            Item 1
+            <div
+              class="c5"
+              color="backgroundAlt"
+              font-weight="600"
+            >
+              Item 1
+            </div>
           </button>
           <button
-            class="c5"
+            class="c6"
             color="textSubtle"
-            scale="md"
           >
-            Item 2
+            <div
+              class="c7"
+              color="textSubtle"
+              font-weight="600"
+            >
+              Item 2
+            </div>
           </button>
         </div>
       </div>

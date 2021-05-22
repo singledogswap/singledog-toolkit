@@ -24,8 +24,6 @@ const getCursorStyle = ({ disabled = false }: DisabledProp) => {
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;
   background-image: url(${isMax ? bunnyHeadMax : bunnyHeadMain});
-  background-color: transparent;
-  border: 0;
   cursor: ${getCursorStyle};
   width: 24px;
   height: 32px;
@@ -74,11 +72,15 @@ export const StyledInput = styled.input<StyledInputProps>`
   position: relative;
 
   ::-webkit-slider-thumb {
+    -webkit-appearance: none;
     ${getBaseThumbStyles}
   }
 
   ::-moz-range-thumb {
     ${getBaseThumbStyles}
+
+    background-color: transparent;
+    border: 0;
   }
 
   ::-ms-thumb {

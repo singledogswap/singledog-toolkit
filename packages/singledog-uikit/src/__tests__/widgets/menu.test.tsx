@@ -2,7 +2,7 @@ import React from "react";
 import noop from "lodash/noop";
 import { BrowserRouter } from "react-router-dom";
 import { renderWithTheme } from "../../testHelpers";
-import { Menu, menuConfig, Language } from "../../widgets/Menu";
+import { Menu, menuConfig, LangType } from "../../widgets/Menu";
 
 /**
  * @see https://jestjs.io/docs/en/manual-mocks
@@ -21,11 +21,7 @@ Object.defineProperty(window, "matchMedia", {
   })),
 });
 
-const langs: Language[] = [...Array(20)].map((_, i) => ({
-  code: `en${i}`,
-  language: `English${i}`,
-  locale: `en${i}-locale`,
-}));
+const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
 
 it("renders correctly", () => {
   const { asFragment } = renderWithTheme(
@@ -38,7 +34,7 @@ it("renders correctly", () => {
         toggleTheme={noop}
         langs={langs}
         setLang={noop}
-        currentLang="en-US"
+        currentLang="EN"
         cakePriceUsd={0.23158668932877668}
         links={menuConfig}
       >
@@ -74,7 +70,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #7A6EAA;
+      fill: #8f80ba;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -84,7 +80,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #280D5F;
+      fill: #452A7A;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -94,7 +90,7 @@ it("renders correctly", () => {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       align-self: center;
-      fill: #280D5F;
+      fill: #452A7A;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -276,7 +272,7 @@ it("renders correctly", () => {
     }
 
     .c4 {
-      color: #280D5F;
+      color: #452A7A;
       padding: 0 8px;
       border-radius: 8px;
     }
@@ -297,7 +293,7 @@ it("renders correctly", () => {
     }
 
     .c6 .desktop-icon {
-      width: 160px;
+      width: 156px;
       display: none;
     }
 
@@ -359,7 +355,7 @@ it("renders correctly", () => {
       padding: 0 16px;
       font-size: 16px;
       background-color: transparent;
-      color: #7A6EAA;
+      color: #8f80ba;
       box-shadow: inset 4px 0px 0px #1FC7D4;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -380,7 +376,7 @@ it("renders correctly", () => {
     }
 
     .c12 svg {
-      fill: #7A6EAA;
+      fill: #8f80ba;
     }
 
     .c12:hover {
@@ -391,7 +387,7 @@ it("renders correctly", () => {
       background-clip: text;
       -webkit-animation: fKQuCC 3s ease-in-out infinite;
       animation: fKQuCC 3s ease-in-out infinite;
-      background: linear-gradient(139.73deg,#E5FDFF 0%,#F3EFFF 100%);
+      background: linear-gradient(139.73deg,#E6FDFF 0%,#F3EFFF 100%);
       background-size: 400% 100%;
     }
 
@@ -409,7 +405,7 @@ it("renders correctly", () => {
       padding: 0 16px;
       font-size: 16px;
       background-color: transparent;
-      color: #7A6EAA;
+      color: #8f80ba;
       box-shadow: none;
       -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -430,7 +426,7 @@ it("renders correctly", () => {
     }
 
     .c16 svg {
-      fill: #7A6EAA;
+      fill: #8f80ba;
     }
 
     .c16:hover {
@@ -441,7 +437,7 @@ it("renders correctly", () => {
       background-clip: text;
       -webkit-animation: fKQuCC 3s ease-in-out infinite;
       animation: fKQuCC 3s ease-in-out infinite;
-      background: linear-gradient(139.73deg,#E5FDFF 0%,#F3EFFF 100%);
+      background: linear-gradient(139.73deg,#E6FDFF 0%,#F3EFFF 100%);
       background-size: 400% 100%;
     }
 
@@ -1068,13 +1064,6 @@ it("renders correctly", () => {
                     class="c14"
                   >
                     Profile & Teams
-                  </div>
-                  <div
-                    class="c18 c19"
-                    color="failure"
-                    font-size="14px"
-                  >
-                    LIVE
                   </div>
                   <svg
                     class="c7"
