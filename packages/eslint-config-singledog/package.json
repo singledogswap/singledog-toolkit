@@ -1,6 +1,6 @@
 {
   "name": "@singledogswap/eslint-config-singledog",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Eslint config for SingledogSwap",
   "main": "lib/index.js",
   "files": [
